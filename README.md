@@ -14,7 +14,7 @@
 
 ## 📢 News
 - **[2025/09/29]** We are proud to introduce **RealUnify**, a comprehensive benchmark designed to evaluate bidirectional capability synergy. 🎉 
-  - We aim to raise a key question through this: <strong>Do Unified Models Truly Benefit from Unification?</strong>💥
+  - We aim to raise a key question through RealUnify: <strong>Do Unified Models Truly Benefit from Unification?</strong>💥
 
 ## 📌 Introduction
 

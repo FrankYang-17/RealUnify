@@ -18,12 +18,12 @@
 
 ## 📌 Introduction
 
-The integration of visual understanding and generation into unified multimodal models represents a significant stride toward general-purpose AI. However, a fundamental question remains unanswered by existing benchmarks: <strong>does this architectural unification actually enable synergetic interaction between the constituent capabilities? </strong>
-Existing evaluation paradigms, which primarily assess understanding and generation in isolation, are insufficient for determining whether a unified model can leverage its understanding to enhance its generation, or use generative simulation to facilitate deeper comprehension. 
-To address this critical gap, we introduce <strong>RealUnify</strong>, a benchmark specifically designed to evaluate bidirectional capability synergy. 
+- The integration of visual understanding and generation into unified multimodal models represents a significant stride toward general-purpose AI. However, a fundamental question remains unanswered by existing benchmarks: <strong>does this architectural unification actually enable synergetic interaction between the constituent capabilities? </strong>
+- Existing evaluation paradigms, which primarily assess understanding and generation in isolation, are insufficient for determining whether a unified model can leverage its understanding to enhance its generation, or use generative simulation to facilitate deeper comprehension. 
+- To address this critical gap, we introduce <strong>RealUnify</strong>, a benchmark specifically designed to evaluate bidirectional capability synergy. 
 RealUnify comprises <strong>1,000</strong> meticulously human-annotated instances spanning 10 categories and 32 subtasks. 
-It is structured around two core axes: <strong>1) Understanding Enhances Generation</strong>, which requires reasoning (e.g., commonsense, logic) to guide image generation, and <strong>2) Generation Enhances Understanding</strong>, which necessitates mental simulation or reconstruction (e.g., of transformed or disordered visual inputs) to solve reasoning tasks.
-A key contribution is our <strong>dual-evaluation protocol</strong>, which combines direct end-to-end assessment with a diagnostic stepwise evaluation that decomposes tasks into distinct understanding and generation phases. This protocol allows us to precisely discern whether performance bottlenecks stem from deficiencies in core abilities or from a failure to integrate them. 
+- It is structured around two core axes: <strong>1) Understanding Enhances Generation</strong>, which requires reasoning (e.g., commonsense, logic) to guide image generation, and <strong>2) Generation Enhances Understanding</strong>, which necessitates mental simulation or reconstruction (e.g., of transformed or disordered visual inputs) to solve reasoning tasks.
+- A key contribution is our <strong>dual-evaluation protocol</strong>, which combines direct end-to-end assessment with a diagnostic stepwise evaluation that decomposes tasks into distinct understanding and generation phases. This protocol allows us to precisely discern whether performance bottlenecks stem from deficiencies in core abilities or from a failure to integrate them. 
 
 ## 🔍 Benchmark Overview
 ![teaser](src/images/RealUnify_Teaser.png)

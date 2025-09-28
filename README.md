@@ -14,7 +14,7 @@
 
 ## 📢 News
 - **[2025/09/29]** We are proud to introduce **RealUnify**, a comprehensive benchmark designed to evaluate bidirectional capability synergy. 🎉 Our benchmark includes:
-    
+
 
 ## 🔍 Benchmark Overview
 ![teaser](src/images/RealUnify_Teaser.png)
@@ -42,7 +42,7 @@
 **License:**
 ```
 RealUnify is only used for academic research. Commercial use in any form is prohibited.
-The copyright of all videos belongs to the video owners.
+The copyright of all (generated) images belongs to the image/model owners.
 If there is any infringement in RealUnify, please email frankyang1517@gmail.com and we will remove it immediately.
 Without prior approval, you cannot distribute, publish, copy, disseminate, or modify RealUnify in whole or in part. 
 You must strictly comply with the above restrictions.

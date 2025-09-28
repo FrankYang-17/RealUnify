@@ -22,7 +22,7 @@
 - Existing evaluation paradigms, which primarily assess understanding and generation in isolation, are insufficient for determining whether a unified model can leverage its understanding to enhance its generation, or use generative simulation to facilitate deeper comprehension. 
 - To address this critical gap, we introduce <strong>RealUnify</strong>, a benchmark specifically designed to evaluate bidirectional capability synergy. 
 RealUnify comprises <strong>1,000</strong> meticulously human-annotated instances spanning 10 categories and 32 subtasks. 
-- It is structured around two core axes: <strong>1) Understanding Enhances Generation</strong>, which requires reasoning (e.g., commonsense, logic) to guide image generation, and <strong>2) Generation Enhances Understanding</strong>, which necessitates mental simulation or reconstruction (e.g., of transformed or disordered visual inputs) to solve reasoning tasks.
+- It is structured around two core axes: <strong>1) Understanding Enhances Generation (UEG)</strong>, which requires reasoning (e.g., commonsense, logic) to guide image generation, and <strong>2) Generation Enhances Understanding (GEU)</strong>, which necessitates mental simulation or reconstruction (e.g., of transformed or disordered visual inputs) to solve reasoning tasks.
 - A key contribution is our <strong>dual-evaluation protocol</strong>, which combines direct end-to-end assessment with a diagnostic stepwise evaluation that decomposes tasks into distinct understanding and generation phases. This protocol allows us to precisely discern whether performance bottlenecks stem from deficiencies in core abilities or from a failure to integrate them. 
 
 ## 🔍 Benchmark Overview
@@ -33,11 +33,29 @@ RealUnify comprises <strong>1,000</strong> meticulously human-annotated instance
 
 ## ✨ Evaluation Pipeline
 
+We support two evaluation methods: **direct evaluation** and **stepwise evaluation**.
+
+Before evaluation, please download the dataset files from our [Hugging Face repository]() to your local path.
+
+
 
 ### 📍 Direct Evaluation
+- **Understanding Ehances Generation (UEG) Tasks**
+  - For the UEG task, please use `UEG_direct.json` as the dataset for evaluation. 
+    - The prompts for image generation are stored in the `prompt` field. Please save the path to the generated image in the `generated_image` field.
+  - After obtaining all the generated images and saving the JSON file, please use `eval/eval_generation.py` for evaluation. 
+    - Please add the model names and their corresponding result JSON files to `task_json_list` in `eval/eval_generation.py`, and set the directory for saving the evaluation results as `RES_JSON_DIR`.
 
+- **Generation Enhances Understanding (GEU) Tasks**
+  - For the GEU task, please use `GEU_direct.json` as the dataset for evaluation. 
+    - The prompts for visual understanding are stored in the `evaluation_prompt` field. Please save the response of model in the `response` field.
+  - After obtaining all the responses and saving the JSON file, please use `eval/eval_understanding.py` for evaluation. 
+    - Please add the model names and their corresponding result JSON files to `task_json_list` in `eval/eval_understanding.py`.
 
 ### 📍 Stepwise Evaluation
+- **Understanding Ehances Generation (UEG) Tasks**
+
+- **Generation Enhances Understanding (GEU) Tasks**
 
 
 ## 💡 Representive Examples of Each Task

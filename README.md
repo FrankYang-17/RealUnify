@@ -6,7 +6,7 @@
 
 <div align="center">
 
-**arXiv Paper:** [![Static Badge](https://img.shields.io/badge/RealUnify-Paper-green)]() &nbsp;&nbsp;&nbsp; **Dataset:** [![Static Badge](https://img.shields.io/badge/RealUnify-Dataset-blue)]()
+**arXiv Paper:** [![Static Badge](https://img.shields.io/badge/RealUnify-Paper-green)]() &nbsp;&nbsp;&nbsp; **Dataset:** [![Static Badge](https://img.shields.io/badge/RealUnify-Dataset-blue)](https://huggingface.co/datasets/DogNeverSleep/RealUnify)
 
 </div>
 
@@ -35,7 +35,7 @@ RealUnify comprises <strong>1,000</strong> meticulously human-annotated instance
 
 We support two evaluation methods: **direct evaluation** and **stepwise evaluation**.
 
-Before evaluation, please download the dataset files from our [Hugging Face repository]() to your local path.
+Before evaluation, please download the dataset files from our [Hugging Face repository](https://huggingface.co/datasets/DogNeverSleep/RealUnify) to your local path.
 
 
 
@@ -54,8 +54,15 @@ Before evaluation, please download the dataset files from our [Hugging Face repo
 
 ### 📍 Stepwise Evaluation
 - **Understanding Ehances Generation (UEG) Tasks**
-
+  - For the UEG task, please use `UEG_step.json` as the dataset for evaluation. 
+    - The prompts for prompt refine (understanding) are stored in the `new_prompt` field. Please save the response of model in the `response` field.
+  - After obtaining all the responses and saving the JSON file, please use `response` as the prompt for image generation. Please save the path to the generated image in the `generated_image` field.
+  - Please add the model names and their corresponding result JSON files to `task_json_list` in `eval/eval_generation.py`, and set the directory for saving the evaluation results as `RES_JSON_DIR`.
 - **Generation Enhances Understanding (GEU) Tasks**
+  - For the GEU task, please use `GEU_step.json` as the dataset for evaluation.
+    - The prompts for image manipulation (editing) are stored in the `edit_prompt` field. Please save the path to the generated image in the `edit_image` field.
+  - After obtaining all the edited images and saving the JSON file, please use `edit_image` as the input image for visual understanding. Please save the response of model in the `response` field.
+  - Please add the model names and their corresponding result JSON files to `task_json_list` in `eval/eval_understanding.py`.
 
 
 ## 💡 Representive Examples of Each Task

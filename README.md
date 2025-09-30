@@ -6,7 +6,7 @@
 
 <div align="center">
 
-**arXiv Paper:** [![Static Badge](https://img.shields.io/badge/RealUnify-Paper-green)]() &nbsp;&nbsp;&nbsp; **Dataset:** [![Static Badge](https://img.shields.io/badge/RealUnify-Dataset-blue)](https://huggingface.co/datasets/DogNeverSleep/RealUnify)
+**arXiv Paper:** [![Static Badge](https://img.shields.io/badge/RealUnify-Paper-green)](https://arxiv.org/abs/2509.24897) &nbsp;&nbsp;&nbsp; **Dataset:** [![Static Badge](https://img.shields.io/badge/RealUnify-Dataset-blue)](https://huggingface.co/datasets/DogNeverSleep/RealUnify)
 
 </div>
 
@@ -85,6 +85,13 @@ Please send an email to <u>frankyang1517@gmail.com</u>. 🌟
 
 ## 📚 Citation
 ```bibtex
-@misc{
+@misc{shi2025realunifyunifiedmodelstruly,
+      title={RealUnify: Do Unified Models Truly Benefit from Unification? A Comprehensive Benchmark}, 
+      author={Yang Shi and Yuhao Dong and Yue Ding and Yuran Wang and Xuanyu Zhu and Sheng Zhou and Wenting Liu and Haochen Tian and Rundong Wang and Huanqian Wang and Zuyan Liu and Bohan Zeng and Ruizhe Chen and Qixun Wang and Zhuoran Zhang and Xinlong Chen and Chengzhuo Tong and Bozhou Li and Chaoyou Fu and Qiang Liu and Haotian Wang and Wenjing Yang and Yuanxing Zhang and Pengfei Wan and Yi-Fan Zhang and Ziwei Liu},
+      year={2025},
+      eprint={2509.24897},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2509.24897}, 
 }
 ```

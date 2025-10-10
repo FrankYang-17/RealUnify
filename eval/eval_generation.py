@@ -16,11 +16,11 @@ import concurrent.futures as cf
 
 global task_dic
 task_dic = [
+    "world_knowledge",
+    "commonsense_reasoning",
     "logical_reasoning",
     "mathematical_reasoning",
-    "commonsense_reasoning",
     "scientific_reasoning",
-    "world_knowledge",
     "code_to_image",
 ]
 

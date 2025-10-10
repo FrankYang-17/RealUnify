@@ -10,6 +10,19 @@ import numpy as np
 import sys
 from tqdm import tqdm
 from PIL import Image
+from copy import deepcopy
+import concurrent.futures as cf
+
+
+global task_dic
+task_dic = [
+    "logical_reasoning",
+    "mathematical_reasoning",
+    "commonsense_reasoning",
+    "scientific_reasoning",
+    "world_knowledge",
+    "code_to_image",
+]
 
 
 def load_json(file_path):
